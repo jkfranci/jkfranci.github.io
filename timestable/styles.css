@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Sans-Serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  background-color: #ededed;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div#question {
+  font-size: 48px;
+  padding: 10px 10px;
+  text-align: center;
+  height: 41px;
+}
+
+div#time {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  height: 18px;
+}
+
+div#message {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  height: 18px;
+}
+
+div#answer {
+  font-size: 58px;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-align: center;
+  height: 55px;
+}
+
+table#layout > tr > td {
+  vertical-align: top;
+}
+
+table#numpad {
+  border-spacing: 3px;
+  border-collapse: initial;
+}
+
+table#numpad td {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#numpad button {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #dedede;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+
+table#numpad button#COR {
+  background-color: #d88;
+}
+
+table#numpad button#OK {
+  background-color: #8d8;
+}
+
+table#numpad td > button:hover {
+  background-color: #ccc;
+}
+
+table#numpad td > button:active {
+  background-color: #aaa;
+}
+
+table #times-table {
+  margin: 10px 20px;
+}
+
+table #times-table td {
+  font-size: 30px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table #times-table td[data-start]{
+  font-size: 12px;
+  cursor: pointer;
+}
+
+table #times-table td[data-start]:hover{
+  background-color: #9d9;
+}
+
+table #times-table td[data-row="1"],
+table #times-table td[data-col="1"] {
+  background-color: #333 !important;
+  color: #eee !important;
+}
+
+table #times-table td[testing="true"] {
+  background-color: #d99;
+}
+
+table #times-table td[testing-active="true"] {
+  background-color: #955;
+}

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Times Tables</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <table id="layout">
+      <tr>
+        <td>
+          <table id="times-table">
+          </table>
+        </td>
+        <td>
+          <div id="time">...</div>
+          <div id="question"></div>
+          <div id="answer"></div>
+          <div id="message"></div>
+          <table id="numpad">
+            <tr>
+              <td><button data-val="7">7</button></td>
+              <td><button data-val="8">8</button></td>
+              <td><button data-val="9">9</button></td>
+            </tr>
+            <tr>
+              <td><button data-val="4">4</button></td>
+              <td><button data-val="5">5</button></td>
+              <td><button data-val="6">6</button></td>
+            </tr>
+            <tr>
+              <td><button data-val="1">1</button></td>
+              <td><button data-val="2">2</button></td>
+              <td><button data-val="3">3</button></td>
+            </tr>
+            <tr>
+              <td><button data-val="0">0</button></td>
+              <td><button id="COR">&lt;</button></td>
+              <td><button id="OK">OK</button></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <script src="index.js"></script>
+    <script>main();</script>
+  </body>
+</html>
