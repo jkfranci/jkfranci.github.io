@@ -1,0 +1,149 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Sans-Serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  background-color: #ededed;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div#question {
+  font-size: 35px;
+  padding: 10px 10px;
+  text-align: center;
+  height: 41px;
+}
+
+div#time {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  height: 18px;
+}
+
+div#message {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  height: 18px;
+}
+
+div#score {
+  font-size: 25px;
+  text-align: center;
+  color: #333;
+}
+
+div#buttons {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+div#score table {
+  width: 100%;
+}
+
+div#score table td {
+  text-align: center;
+}
+
+table#layout > tbody > tr > td:first-child {
+  width: 200px;
+}
+
+table#layout > tbody > tr > td {
+  vertical-align: top;
+}
+
+table #answer-table {
+  margin: 10px 20px;
+}
+
+table #answer-table td {
+  border: 1px solid #ccc;
+  font-size: 20px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+table #answer-table:active {
+  background-color: #ddd;
+}
+
+table #answer-table td:active {
+  background-color: #fff;
+}
+
+.blink_correct {
+  animation: correct 0.5s linear 1;
+}
+
+@keyframes correct {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #5f5;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+.blink_wrong {
+  animation: wrong 0.5s linear 1;
+}
+
+@keyframes wrong {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #f55;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
